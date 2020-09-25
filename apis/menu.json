@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "key": "home",
+            "title": "Home",
+            "href": "index.html"
+        },
+        {
+            "key": "about",
+            "title": "About",
+            "href": "about.html",
+            "not_found": true
+        },
+        {
+            "key": "services",
+            "title": "Services",
+            "href": "services.html"
+        },
+        {
+            "key": "contact",
+            "title": "Contact",
+            "href": "contact.html"
+        }
+    ]
+}
