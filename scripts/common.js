@@ -1,5 +1,6 @@
+const notFoundPage = 'pageNotFound.html';
+
 function getPageUrl(menuObj) {
-    const notFoundPage = 'pageNotFound.html';
     let menuHref = '#';
     if (menuObj.not_found) {
         menuHref = notFoundPage; // declared in windowScope
@@ -17,6 +18,10 @@ function setCurrentClickedMenu(menuObj) {
 
         // dynamically set h2 title of every page
         document.querySelector('h2').innerHTML = menuObj.title;
+
+        if (menuObj.not_found) {
+            location.href = notFoundPage;
+        }
     }
 }
 
