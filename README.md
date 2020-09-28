@@ -8,3 +8,8 @@ This repo contains below features:
     
     ii. If a menu is _not_found: true_, hit browser back button to return back to previous page
     
+2. Register -> Login -> Home workflow is introduced
+    
+    i. Show registered users' name in header in every page, with a Logout
+    
+3. Dynamically load table and data in Services
