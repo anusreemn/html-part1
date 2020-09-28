@@ -230,3 +230,12 @@ input[type="email"]:not(:placeholder-shown) {
 input[type="email"]:valid {
     outline: 1px solid green;
 }
+
+#profileHolder {
+    padding-top: 10px;
+    text-align: right;
+}
+
+#profileHolder a {
+    margin-left: 5px;
+}

@@ -1,16 +1,7 @@
 const notFoundPage = 'pageNotFound.html';
 
 function getPageUrl(menuObj) {
-    let menuHref = '#';
-    if (menuObj.not_found) {
-        menuHref = notFoundPage; // declared in windowScope
-    } else if (menuObj.href) {
-        menuHref = menuObj.href;
-    }
-    return menuHref;
-
-    // can also rewrite the above with below commented statements
-    // return menuObj.not_found ? notFoundPage : (menuObj.href || '#');
+    return menuObj.not_found ? notFoundPage : (menuObj.href || '#');
 }
 
 function setCurrentClickedMenu(menuObj) {
@@ -45,6 +36,7 @@ function loadMenu() {
 
                     // insert a tag into an li, and li into the ul
                     ulEl.appendChild(document.createElement('li').appendChild(aElement));
+
                 }
             }
         }
@@ -71,4 +63,17 @@ function getJson(url, callbackFunction) {
 
     xhr.open('GET', url, true);
     xhr.send();
+}
+
+function setUserProfileData() {
+    const userData = isSignedIn();
+    if (userData) {
+        const profileSection = document.querySelector('#profileHolder');
+        const userNameEl = profileSection.appendChild(document.createElement('em'));
+        userNameEl.innerHTML = `${userData.firstName} ${userData.lastName}`;
+
+        const logoutLink = profileSection.appendChild(document.createElement('a'));
+        logoutLink.setAttribute('href', '/' + getBaseUrl())
+        logoutLink.innerHTML = 'Logout'
+    }
 }

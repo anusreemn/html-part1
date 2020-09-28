@@ -3,7 +3,7 @@
         {
             "key": "home",
             "title": "Home",
-            "href": "index.html",
+            "href": "home.html",
             "not_found": false
         },
         {
