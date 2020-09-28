@@ -1,0 +1,29 @@
+{
+    "tableColumns": [{
+            "key": "title",
+            "header": "Job Title",
+            "dataType": "string"
+        }, {
+            "key": "location",
+            "header": "Location",
+            "dataType": "link",
+            "innerText": "Office"
+        }, {
+            "key": "posId",
+            "header": "Job Code No.",
+            "dataType": "number"
+        }, {
+            "key": "lastDate",
+            "header": "Last Date of Application",
+            "dataType": "date"
+        }, {
+            "key": "status",
+            "header": "Position Availability",
+            "dataType": "button",
+            "innerText": "Apply"
+        }],
+    "status": {
+        "message": "",
+        "type": "SUCCESS"
+    }
+}

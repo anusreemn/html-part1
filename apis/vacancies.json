@@ -1,0 +1,31 @@
+{
+    "data": [{
+        "posId": 33,
+        "title": "Senior DevOps Engineer",
+        "location": "https://www.google.com/maps/place/Kochi,+Kerala/@9.9823428,76.1608458",
+        "lastDate": null,
+        "status": 0
+    }, {
+        "posId": 21,
+        "title": "Senior React Developer",
+        "location": "https://www.google.com/maps/place/Kochi,+Kerala/@9.9823428,76.1608458",
+        "lastDate": "2020-10-08",
+        "status": 1
+    }, {
+        "posId": 15,
+        "title": "Senior React Developer",
+        "location": null,
+        "lastDate": "2020-11-08",
+        "status": 1
+    }, {
+        "posId": 28,
+        "title": "Senior Javascript Developer",
+        "location": "https://www.google.com/maps/place/Kochi,+Kerala/@9.9823428,76.1608458",
+        "lastDate": "2020-10-05",
+        "status": 0
+    }],
+    "status": {
+        "message": "",
+        "type": "SUCCESS"
+    }
+}

@@ -82,3 +82,20 @@ function setUserProfileData() {
         location.href = '/'
     }
 }
+
+function createButton(btnText) {
+    const inputBtn = document.createElement('input')
+    inputBtn.setAttribute('type', 'button')
+    inputBtn.setAttribute('value', btnText || 'Submit')
+    return inputBtn;
+}
+
+function createLink(linkText, href, inNewTab) {
+    const anchorLink = document.createElement('a')
+    if (inNewTab) {
+        anchorLink.setAttribute('target', '_blank')
+    }
+    anchorLink.setAttribute('href', href || '#');
+    if (linkText) { anchorLink.innerHTML = linkText; }
+    return anchorLink;
+}

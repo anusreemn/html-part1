@@ -188,6 +188,7 @@ footer .footer-item {
 
 .table-data table {
     color: inherit;
+    text-align: left;
 }
 table .empty-row {
     text-align: center;
