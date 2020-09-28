@@ -74,6 +74,11 @@ function setUserProfileData() {
 
         const logoutLink = profileSection.appendChild(document.createElement('a'));
         logoutLink.setAttribute('href', '/')
-        logoutLink.innerHTML = 'Logout'
+        logoutLink.innerHTML = 'Logout';
+        logoutLink.addEventListener('click', function() {
+            localStorage.removeItem('userInfo');
+        })
+    } else {
+        location.href = '/'
     }
 }
