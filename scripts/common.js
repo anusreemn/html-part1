@@ -73,7 +73,7 @@ function setUserProfileData() {
         userNameEl.innerHTML = `${userData.firstName} ${userData.lastName}`;
 
         const logoutLink = profileSection.appendChild(document.createElement('a'));
-        logoutLink.setAttribute('href', '/' + getBaseUrl())
+        logoutLink.setAttribute('href', '/')
         logoutLink.innerHTML = 'Logout'
     }
 }
